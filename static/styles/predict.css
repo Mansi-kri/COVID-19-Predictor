@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Tamma 2', bold;
+}
+
+.container{
+    font-size: 43px;
+    /* border: violet 4px solid; */
+    text-align: center;
+    color: yellow;
+    margin: 340px;
+}
+
+span{
+    color: seagreen;
+}
+
+button{
+    font-size: 20px;
+    border: white 5px solid;
+    width: 145px;
+    height: 55px;
+    border-radius: 9px;
+    cursor: pointer;
+    padding: 2px 2px;
+    margin: 20px 190px;
+    color: white;
+    background-color: green;
+    transition-duration: 0.3s;
+}
+button:hover{
+    background-color: white;
+    color: green;
+    border: green 5px solid;
+}
+body{
+    background-image: url('/static/styles/img/bg.jpg');
+}

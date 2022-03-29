@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Tamma 2', regular;
+}
+
+#main-heading{
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+    font-size: 45px;
+    padding-left: 40px;
+    border: lightcoral 3px solid;
+    border-radius: 19px;
+}
+
+.container{
+    margin-left: 10px;
+    margin-top: 70px;
+    padding-left: 435px;
+    font-size: 28px;
+    color:yellow;
+}
+
+#age{
+    width: 170px;
+    height: 32px;
+    font-size: large;
+    margin: 10px;
+    border: orange 3.5px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+
+#body-temp{
+    width: 230px;
+    height: 32;
+    font-size: large;
+    margin: 10px;
+    border: orange 3.5px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+
+select{
+    width: 100px;
+    height: 35px;
+    font-size: large;
+    margin: 10px;
+    border: lime 3.5px solid;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+button{
+    font-size: 20px;
+    border: white 5px solid;
+    width: 125px;
+    height: 55px;
+    border-radius: 9px;
+    cursor: pointer;
+    padding: 2px 2px;
+    margin: 20px 190px;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: red;
+}
+
+button:hover{
+    border: red 5px solid;
+    color: red;
+    background-color: white;
+}
+
+body{
+    background-image: url('/static/styles/img/bg.jpg');
+    background-position: center;
+}
