@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <h2 id='main-heading'>COVID-19 Probability Detector</h2>
+  <div class='container'>
+      <form action="/" method="POST">
+        <label for="age">Age: </label>
+        <input id="age" type="number" name="age" placeholder="Enter Your Age" width=10><br><br>
+
+        <label for="throat">Sore Throat: </label>
+        <select name="sore-throat">
+          <option value="" selected disabled hidden>Select</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select><br><br>
+
+        <label for="breathing">Difficulty in Breathing: </label>
+        <select name="breathing">
+          <option value="" selected disabled hidden>Select</option>
+          <option value="-1">No</option>
+          <option value="0">Low</option>
+          <option value="1">High</option>
+        </select><br><br>
+
+        <label for="temp">Body Temperature (in °C): </label>
+        <input id="body-temp" type="number" name="temp" placeholder="Enter Body Temperature"><br><br>
+
+        <label for="headache">Frequent Headaches: </label>
+        <select name="headache">
+          <option value="" selected disabled hidden>Select</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select><br><br>
+
+        <label for="bodyache">Bodyache: </label>
+        <select name="bodyache">
+          <option value="" selected disabled hidden>Select</option>
+          <option value="-1">No</option>
+          <option value="0">Slight</option>
+          <option value="1">Severe</option>
+        </select><br><br>
+
+        <button type="submit">PREDICT</button>
+      </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/predict.css') }}"> <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Prediction Page</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Probability of Infection is : <span>{{probability}}</span>
+        </p>
+        <a href="/">
+            <button type="submit">Predict Again</button>
+        </a>
+    </div>
+</body>
+</html>
